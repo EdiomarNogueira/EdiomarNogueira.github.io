@@ -33,13 +33,13 @@ const tecnico = [
   "Montagem e Configuração de Servidores",
 ];
 
-export type Experiencia = {
+interface ExperienciaProps {
   titulo: string,
   tempo: string;
   itens: string[]
 };
 
-function GrupoExperiencia({ titulo, tempo, itens}:Experiencia) {
+function GrupoExperiencia({ titulo, tempo, itens}:ExperienciaProps) {
   return (
     <section className="sidebar-grupo">
       <h3>{titulo}</h3>
