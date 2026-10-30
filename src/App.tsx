@@ -12,6 +12,10 @@ export default function App() {
         <Sidebar />
 
         <main className="principal">
+          <Section icon="◇" title="Em Construção">
+            <p>Continuação em Breve...</p>
+          </Section>
+          {/*
           <Section icon="◈" title="Sobre mim">
             <p>Escreva aqui sua apresentação profissional.</p>
           </Section>
@@ -27,7 +31,7 @@ export default function App() {
 
           <Section icon="◇" title="Projetos">
             <p>Adicione seus projetos aqui.</p>
-          </Section>
+          </Section>*/}
         </main>
       </div>
     </div>
