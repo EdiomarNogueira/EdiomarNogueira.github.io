@@ -1,0 +1,175 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #eae7e1;
+  font-family: Arial, sans-serif;
+  color: #354b55;
+  padding: 10px;
+}
+
+.pagina {
+  width: 100%;
+  max-width: 100%;
+  min-height: 100vh;
+  background: white;
+  box-shadow: 0 8px 35px #00000012;
+}
+
+.header {
+  background: #354b55;
+  color: white;
+  padding: 35px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  background: #dce1e0;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header p {
+  color: #d9e0e2;
+}
+
+.contatos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.contatos a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.conteudo {
+  display: grid;
+  grid-template-columns: 32% 68%;
+}
+
+.sidebar {
+  background: #f5f2ec;
+  padding: 30px;
+  min-width: 0;
+  text-align: left;
+}
+
+.sidebar-grupo {
+  margin-bottom: 34px;
+}
+
+.sidebar-grupo h3 {
+  font-size: 16px;
+  font-weight: 600;
+  color: #354b55;
+  margin: 0 0 5px;
+  padding: 0;
+  border: none;
+}
+
+.sidebar-tempo {
+  display: block;
+  font-size: 12px;
+  color: #84918f;
+  margin-bottom: 15px;
+}
+
+.sidebar-formacao {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-top: 17px;
+}
+
+.sidebar-formacao strong {
+  font-size: 14px;
+  font-weight: 500;
+  color: #354b55;
+  line-height: 1.5;
+}
+
+.sidebar-formacao span {
+  font-size: 12px;
+  color: #84918f;
+}
+
+.sidebar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+}
+
+.sidebar-tag {
+  background: #e8edeb;
+  color: #435b5c;
+  padding: 6px 10px;
+  border-radius: 5px;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.principal {
+  padding: 35px;
+  min-width: 0;
+}
+
+.section {
+  margin-bottom: 40px;
+}
+
+.section h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 20px;
+  margin-top: 0;
+  border-bottom: 1px solid #e4e6e6;
+  padding-bottom: 12px;
+  color:#354b55;
+}
+
+.section-content {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #53636b;
+}
+
+@media (max-width: 650px) {
+  .pagina {
+    width: 100%;
+    margin: 0;
+  }
+
+  .header {
+    padding: 25px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .contatos {
+    justify-content: center;
+  }
+
+  .conteudo {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar,
+  .principal {
+    padding: 25px;
+  }
+}
