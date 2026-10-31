@@ -1,0 +1,92 @@
+.linha-tempo {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: left;
+}
+
+/* Linha central e marcadores de cada experiência. */
+.linha-tempo::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  bottom: 25px;
+  left: 50%;
+  width: 1px;
+  background: #ccd7d5;
+}
+
+.experiencia::before {
+  content: "";
+  position: absolute;
+  top: 25px;
+  left: calc(100% + 18px);
+  width: 11px;
+  height: 11px;
+  border: 2px solid white;
+  border-radius: 50%;
+  background: #587b82;
+  box-shadow: 0 0 0 3px #e8edeb;
+  transform: translateX(-50%);
+}
+
+.experiencia {
+  position: relative;
+  width: calc(50% - 18px);
+  margin-bottom: 24px;
+  padding: 18px;
+  border: 1px solid #e1e7e5;
+  border-radius: 8px;
+  background: #fafbf9;
+  overflow-wrap: anywhere;
+  animation: aparecer 450ms ease both;
+  transition: background 200ms, border-color 200ms;
+}
+
+.experiencia:nth-child(even) { margin-left: calc(50% + 18px); }
+.experiencia:nth-child(even)::before { left: -18px; }
+.experiencia:last-child { margin-bottom: 0; }
+.experiencia:hover { background: #f1f5f2; border-color: #afc3c1; }
+
+.experiencia small { font-size: 12px; color: #576e73; }
+.experiencia h3 { margin: 5px 0; font-size: 16px; line-height: 1.4; }
+.experiencia > span { font-size: 13px; }
+.experiencia > p { margin: 10px 0 0; font-size: 14px; line-height: 1.6; }
+.experiencia footer { margin-top: 15px; padding-top: 12px; border-top: 1px solid #e1e7e5; }
+
+.tecnologias {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  list-style: none;
+  margin: 8px 0 0;
+  padding: 0;
+}
+
+.tecnologias li {
+  padding: 3px 8px;
+  border-radius: 4px;
+  background: #e8edeb;
+  color: #435b5c;
+  font-size: 12px;
+}
+
+@keyframes aparecer {
+  from { opacity: 0; transform: translateY(8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Em celulares, todos os cards ficam à direita da linha. */
+@media (max-width: 650px) {
+  .linha-tempo { padding-left: 28px; }
+  .linha-tempo::before { left: 6px; }
+  .experiencia { width: 100%; padding: 15px; }
+  .experiencia:nth-child(even) { margin-left: 0; }
+  .experiencia::before,
+  .experiencia:nth-child(even)::before { left: -22px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .experiencia { animation: none; transition: none; }
+}

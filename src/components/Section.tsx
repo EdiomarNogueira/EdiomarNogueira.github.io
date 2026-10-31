@@ -10,7 +10,7 @@ export default function Section({ title, icon, children }: SectionProps) {
   return (
     <section className="section">
       <h2>
-        <span className="section-icon">{icon}</span>
+        <span className="section-icon" aria-hidden="true">{icon}</span>
         {title}
       </h2>
       <div className="section-content">{children}</div>

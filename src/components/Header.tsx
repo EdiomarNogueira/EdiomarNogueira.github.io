@@ -1,31 +1,31 @@
-
+import { Mail, GitFork, ContactRound, Phone, UsersRound, MapPin } from "lucide-react";
 const contatos = [
   {
-    icon: "✉",
+    icon: <Mail size={20} />,
     label: "Email",
     texto: "ediomar.a.n@gmail.com",
     url: "mailto:ediomar.a.n@gmail.com",
   },
   {
-    icon: "◈",
+    icon: <GitFork size={20} />,
     label: "GitHub",
     texto: "EdiomarNogueira",
     url: "https://github.com/EdiomarNogueira",
   },
   {
-    icon: "▣",
+    icon: <ContactRound size={20} />,
     label: "LinkedIn",
     texto: "Perfil profissional",
     url: "https://www.linkedin.com/in/ediomar-nogueira-b38921a0/",
   },
   {
-    icon: "☎",
+    icon: <Phone size={20} />,
     label: "Telefone",
     texto: "Não informado",
     url: null,
   },
   {
-    icon: "◎",
+    icon: <UsersRound size={20} />,
     label: "Facebook",
     texto: "Perfil",
     url: "https://www.facebook.com/Ediomar.Nogueira",
@@ -54,7 +54,7 @@ export default function Header() {
           </p>
 
           <div className="header-detalhes">
-            <span>⌖ Vitória da Conquista - BA</span>
+            <span><MapPin size={14} aria-hidden="true" /> Vitória da Conquista - BA</span>
             <span>33 anos</span>
           </div>
         </div>

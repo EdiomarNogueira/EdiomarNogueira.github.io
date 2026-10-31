@@ -45,7 +45,7 @@ a {
   min-height: 100vh;
   margin: 0 auto;
   background: #ffffff;
-  box-shadow: 0 8px 35px #00000012;
+  box-shadow: 0 6px 32px rgba(53, 75, 85, 0.08);
   overflow: hidden;
 }
 
@@ -243,6 +243,9 @@ a {
 }
 
 .sidebar-grupo h3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
   margin: 0 0 5px;
   padding: 0;
   border: none;
@@ -353,10 +356,20 @@ a {
   color: #354b55;
 }
 
+.section-icon {
+  display: inline-flex;
+  flex-shrink: 0;
+}
+
 .section-content {
   font-size: 15px;
   line-height: 1.7;
   color: #53636b;
+}
+
+.sobre-mim-texto {
+  text-align: justify;
+  hyphens: auto;
 }
 
 .section-content p {
