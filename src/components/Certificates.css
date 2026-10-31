@@ -1,0 +1,80 @@
+.certificados { text-align: left; }
+
+.certificados .certificados-total {
+  margin: 0 0 16px;
+  color: #576e73;
+  font-size: 13px;
+}
+
+.certificados-total strong { color: #354b55; font-size: 16px; }
+
+.certificados-lista {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  list-style: none;
+  margin: 0 0 16px;
+  padding: 0;
+}
+
+.certificados-lista li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-content: start;
+  align-items: start;
+  gap: 8px 12px;
+  padding: 18px;
+  border: 1px solid #e1e7e5;
+  border-left: 3px solid #8aa3aa;
+  border-radius: 8px;
+  background: #fafbf9;
+  overflow-wrap: anywhere;
+}
+
+.certificados-lista li:nth-child(4n + 2),
+.certificados-lista li:nth-child(4n + 3) { background: #eef0ee; }
+
+.certificados-lista h3 {
+  margin: 0;
+  color: #354b55;
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 1.5;
+}
+
+.certificados-horas {
+  padding: 3px 9px;
+  border-radius: 5px;
+  background: #e8edeb;
+  color: #435b5c;
+  font-size: 12px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.certificados-instituicao {
+  grid-column: 1 / -1;
+  font-size: 12px;
+  color: #576e73;
+}
+
+.certificados-mais {
+  margin: 0 8px 8px 0;
+  padding: 9px 14px;
+  border: 1px solid #ccd7d5;
+  border-radius: 5px;
+  background: #f5f8f6;
+  color: #354b55;
+  font: inherit;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.certificados-mais:hover { background: #e8edeb; }
+.certificados-mais:focus-visible { outline: 2px solid #587b82; outline-offset: 3px; }
+
+@media (max-width: 650px) {
+  .certificados-lista { grid-template-columns: minmax(0, 1fr); }
+  .certificados-lista li:nth-child(n) { background: #fafbf9; }
+  .certificados-lista li:nth-child(even) { background: #eef0ee; }
+}

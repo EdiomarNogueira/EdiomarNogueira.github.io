@@ -81,8 +81,11 @@ a {
   height: 190px;
   object-fit: cover;
   object-position: center;
-  border-radius: 8px;
-  background: #dce1e0;
+  padding: 4px;
+  border: 1px solid #8aa3aa;
+  border-radius: 14px;
+  background: #60737a;
+  box-shadow: 0 6px 18px rgba(18, 35, 42, 0.18);
 }
 
 .header-apresentacao {
@@ -465,7 +468,6 @@ a {
   .header-foto {
     width: 145px;
     height: 160px;
-    border-radius: 8px;
   }
 
   .header-apresentacao {

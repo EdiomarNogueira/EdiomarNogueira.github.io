@@ -14,7 +14,7 @@ export const experiencias: Experiencia[] = [
     cargo: "Seu cargo mais recente",
     empresa: "Elleven Tecnologia",
     resumo: "Desenvolvimento e manutenção de sistemas web e aplicativos, com atuação no front-end, back-end e bancos de dados, desde a implementação de funcionalidades até a entrega das soluções.",
-    tecnologias: ["PHP", "Laravel","Node.js","Laravel","JavaScript","TypeScript","React.js","React Native","CodeIgniter","MySql/MariaDB","PostgreSQL","HTML5 & CSS"],
+    tecnologias: ["PHP", "Laravel","Node.js","JavaScript","TypeScript","React.js","React Native","CodeIgniter","MySql/MariaDB","PostgreSQL","HTML5 & CSS"],
   },
   {
     id: "experiencia-2",
@@ -25,7 +25,7 @@ export const experiencias: Experiencia[] = [
     tecnologias: ["XenServer", "FreeNAS","Zabbix","Grafana","Bacula","LDAP","Montagem e Manutenção de Computadores", "Instalação e Configuração de Sistemas Operacionais","Instalação de Softwares e Drivers","Backup e Recuperação de Dados","Suporte Técnico ao Usuário"],
   },
   {
-    id: "experiencia-2",
+    id: "experiencia-3",
     periodo: "2017 — 2022",
     cargo: "Técnico em Sistemas de Informática",
     empresa: "IBR HOSPITAL",
@@ -33,7 +33,7 @@ export const experiencias: Experiencia[] = [
     tecnologias: ["Montagem e Manutenção de Computadores", "Instalação e Configuração de Sistemas Operacionais","Instalação de Softwares e Drivers","Backup e Recuperação de Dados","Suporte Técnico ao Usuário"],
   },
   {
-    id: "experiencia-2",
+    id: "experiencia-4",
     periodo: "2014 - 2016",
     cargo: "Auxiliar de CPD",
     empresa: "Cambuí Veículos",

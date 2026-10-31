@@ -2,6 +2,10 @@ import { experiencias } from "../data/experiencias";
 import "./ExperienceTimeline.css";
 
 export default function ExperienceTimeline() {
+  if (experiencias.length === 0) {
+    return <p>As experiências serão adicionadas em breve.</p>;
+  }
+
   return (
     <ol className="linha-tempo" aria-label="Trajetória profissional">
       {experiencias.map((experiencia, index) => (
